@@ -26,8 +26,32 @@ Sortie attendue:
 
 */
 
-function filterOffensiveComments(comments, bannedWords) {
+
+function filterOffensiveComments(comments, bannedWords){
+  result=[];
+  let j=0;
+  for(let i=0; i<comments.length-1;i++){
+    for (let k=0; k<bannedWords.length-1;k++){
+      if (!comments[i].includes(bannedWords[k])&&!comments[i].includes(bannedWords[k+1])){
+        result[j]= comments[i];
+        j++
+      }
+    }
+  }
+  return result;
 }
 
 // Ne pas modifier l'export
 module.exports = filterOffensiveComments;
+
+//let commens = [
+//  "Very useful tutorial, thank you so much!",
+//  "React is not a damn framework, it's a LIBRARY",
+//  "Why you put bloody kitten pictures in a tech tutorial is beyond me!",
+//  "Which one is better, React or Angular?",
+//  'There is no "better", it depends on your use case, DAMN YOU']
+//  let bannedWors = ['bloody', 'damn'];
+  
+  
+//console.log(commens.filter(filterOffensiveComments))
+// console.log(filterOffensiveComments(commens,bannedWors))
