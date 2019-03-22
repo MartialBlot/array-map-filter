@@ -59,7 +59,7 @@ En sortie:
 
  */
 function getMoviesFreshness(movies) {
-  return result = movies.map(movies => (movies.rating<60) ? Object.defineProperty(movies, "label", {value :'rotten'}):(movies.rating>75) ? Object.defineProperty(movies, "label",{value :'certified fresh'}) : Object.defineProperty(movies, "label", {value :'fresh'}))
+  return result = movies.map(movies => (movies.rating<60) ? Object.defineProperty(movies, "label", 'rotten'):(movies.rating>75) ? Object.defineProperty(movies, "label", 'certified fresh') : Object.defineProperty(movies, "label", 'fresh'))
 }
 
 
