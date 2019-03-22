@@ -1,6 +1,6 @@
 const searchWordFilter = require('../filter/ex5.js');
 
-describe('filter - exercice 5', () => {
+xdescribe('filter - exercice 5', () => {
 
   test('searchWordFilter', () => {
     expect(searchWordFilter([
