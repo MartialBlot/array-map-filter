@@ -25,6 +25,9 @@ Sortie attendue:
 
 
 function keepStarks(names) {
+  if (names.endsWith("Stark")){
+    return names;
+  }
   
 }
 

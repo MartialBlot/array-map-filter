@@ -29,6 +29,8 @@ Sortie attendue:
  */
 
 function filterOnPrice(products, maxPrice) {
+  if (products.price < maxPrice){
+    return products;
   }
 }
 

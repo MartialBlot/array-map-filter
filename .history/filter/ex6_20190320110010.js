@@ -28,6 +28,17 @@ Sortie attendue:
 
 
 function filterOffensiveComments(comments, bannedWords){
+  result=[];
+  let j=0;
+  for(let i=0; i<comments.length-1;i++){
+    for (let k=0; k<bannedWords.length-1;k++){
+      if (!comments[i].includes(bannedWords[k])&&!comments[i].includes(bannedWords[k+1])){
+        result[j]= comments[i];
+        j++
+      }
+    }
+  }
+  return result;
 }
 
 // Ne pas modifier l'export

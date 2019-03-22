@@ -39,6 +39,9 @@ Exemple d'entrée:
  */
 
 function searchWordFilter(items, search) {
+  if (items.includes(search)){
+    return items;
+  }
 }
 
 // Ne pas modifier l'export
