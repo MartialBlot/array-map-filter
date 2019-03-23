@@ -59,11 +59,7 @@ En sortie:
 
  */
 function getMoviesFreshness(movies) {
-  for (let i = 0; i < movies.length; i++) {
-    movies.map(movies => (movies.rating<60) ? movies['label'] = "rotten" :(movies.rating>75) ? movies['label'] = "certified fresh" : movies['label'] = "fresh")
-  }
-  return movies;
-  //return result = movies.map(movies => (movies.rating<60) ? movies['label'] = "rotten" :(movies.rating>75) ? movies['label'] = "certified fresh" : movies['label'] = "fresh")
+  return result = movies.map(movies => (movies.rating<60) ? movies[label] = "rotten" :(movies.rating>75) ? movies[label] = "certified fresh" : movies[label] = "fresh")
 }
 
 
