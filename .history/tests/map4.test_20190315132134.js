@@ -1,6 +1,6 @@
 const getCirclesProperties = require('../map/ex4.js');
 
-describe('map - exercice 4', () => {
+xdescribe('map - exercice 4', () => {
 
   test('getCirclesProperties', () => {
     expect(getCirclesProperties(  [
