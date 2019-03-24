@@ -1,6 +1,6 @@
 const getJedisNames = require('../filter-map/ex1.js');
 
-describe('map + filter - exercice 1', () => {
+xdescribe('map + filter - exercice 1', () => {
 
   test('getJedisNames', () => {
     expect(getJedisNames([
